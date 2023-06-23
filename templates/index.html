@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Deployment</title>
+</head>
+<body>
+    <h1>Predict Your Exam Score</h1>
+    <p>Hi guys ! Enter the number of hours you have studied  </p>
+    <form action="/" method="POST">
+        <input type="number" name="hrs" placeholder="Number of hours studied">
+        <input type="submit">
+    </form>
+
+    {% if my_marks %}
+    <h2> Your predicted score is : </h2> {{my_marks}}
+    {% endif %}
+   
+</body>
+</html>
